@@ -10,9 +10,14 @@ After the GitHub Pages deployment workflow completes, visit:
 
 ## Project video
 
-Watch the narrated, captioned introduction:
+Watch the narrated project introduction and user-experience feedback:
 
 <https://amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/video.html>
+
+- [Project introduction video (MP4)](https://amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/legacycare-explainer.mp4)
+- [Experience feedback video (MP4)](https://amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/legacycare-experience-feedback.mp4)
+
+The experience feedback is a prototype walkthrough, not a formal usability study with participant research.
 
 ## Run locally
 

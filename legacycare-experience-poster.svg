@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0eee7"/>
+      <stop offset="1" stop-color="#dfe7dc"/>
+    </linearGradient>
+    <linearGradient id="hills" x1="0" x2="1">
+      <stop stop-color="#81927b"/>
+      <stop offset="1" stop-color="#526952"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#background)"/>
+  <circle cx="1020" cy="170" r="95" fill="#dfc7a2" opacity=".8"/>
+  <path d="M650 475c125-150 260-176 630-96v341H610z" fill="#91a087"/>
+  <path d="M785 554c128-139 250-124 495-78v244H760z" fill="url(#hills)"/>
+  <rect x="890" y="431" width="25" height="110" rx="8" fill="#d1a888"/>
+  <path d="M902 446V346M902 398c-42-10-47-51-27-66 32 4 41 35 27 66Zm0-29c32-1 48-30 38-52-28-1-44 20-38 52Z" fill="#dce4d3"/>
+  <text x="84" y="123" fill="#63735d" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="5">LEGACYCARE · EXPERIENCE FEEDBACK</text>
+  <text x="82" y="260" fill="#2c342e" font-family="Georgia,serif" font-size="68">A caring start.</text>
+  <text x="82" y="347" fill="#2c342e" font-family="Georgia,serif" font-size="68">Trust comes next.</text>
+  <text x="86" y="410" fill="#687068" font-family="Arial,sans-serif" font-size="24">A balanced review of the user experience.</text>
+  <rect x="66" y="502" width="1148" height="112" rx="18" fill="#fffefa" stroke="#eae8df" stroke-width="2"/>
+  <text x="92" y="544" fill="#728469" font-family="Arial,sans-serif" font-size="18" font-weight="700">EXPERIENCE FEEDBACK</text>
+  <text x="90" y="587" fill="#414a40" font-family="Georgia,serif" font-size="27">The caring design should be matched by clarity, accessibility, and privacy.</text>
+  <text x="86" y="671" fill="#72776c" font-family="Arial,sans-serif" font-size="18">Prototype walkthrough · not a formal participant usability study</text>
+</svg>

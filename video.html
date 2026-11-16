@@ -6,7 +6,7 @@
     <meta name="theme-color" content="#f7f5f0" />
     <meta
       name="description"
-      content="Watch a short introduction to LegacyCare: a thoughtful place to document end-of-life wishes and share them at your own pace."
+      content="Watch a short LegacyCare introduction and a narrated user-experience review of the prototype."
     />
     <title>Meet LegacyCare — A short introduction</title>
     <style>
@@ -27,6 +27,22 @@
       video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #34493e; }
       .video-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 16px; background: var(--paper); color: #777a70; font-size: 10px; }
       .video-meta span:first-child { color: #63745d; }
+      .video-section { scroll-margin-top: 20px; }
+      .video-links { display: flex; flex-wrap: wrap; gap: 9px; margin: 0 0 15px; }
+      .video-links a { display: inline-flex; align-items: center; min-height: 34px; padding: 8px 12px; border: 1px solid #e7e5dd; border-radius: 7px; background: var(--paper); color: #687160; text-decoration: none; font-size: 10px; font-weight: 600; }
+      .video-links a[aria-current="location"] { border-color: #dce5d8; background: #eaf0e7; color: #476047; }
+      .video-links a:hover { filter: brightness(.97); }
+      .experience-heading { margin: 26px 0 12px; }
+      .experience-heading h2 { margin: 7px 0 5px; font-size: 26px; }
+      .experience-heading p:last-child { max-width: 650px; color: #81837a; font-size: 12px; line-height: 1.65; }
+      .feedback-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: start; margin-top: 15px; }
+      .feedback-grid .panel { height: 100%; }
+      .feedback-points { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; }
+      .feedback-points li { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start; color: #6f7269; font-size: 10px; line-height: 1.55; }
+      .feedback-points li span { color: #728469; }
+      .feedback-points strong { color: #464a43; }
+      .feedback-limits { margin-top: 12px; padding: 11px 12px; border-radius: 7px; background: #f3f0e8; color: #77786f; font-size: 9px; line-height: 1.6; }
+      .feedback-limits strong { color: #5b6155; }
       .content { display: grid; grid-template-columns: 1fr 250px; gap: 14px; align-items: start; margin-top: 16px; }
       .panel { padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
       h2 { margin: 4px 0 11px; font-family: var(--serif); font-size: 18px; font-weight: 400; }
@@ -41,7 +57,7 @@
       .button.primary { border-color: var(--green); background: var(--green); color: white; }
       .button:hover { filter: brightness(.97); }
       footer { display: flex; justify-content: space-between; gap: 10px; margin-top: 19px; padding-top: 13px; border-top: 1px solid #eae8e0; color: #96978e; font-size: 9px; }
-      @media (max-width: 680px) { .page { width: min(100% - 28px, 520px); padding-top: 18px; } .content { grid-template-columns: 1fr; } .video-meta { align-items: flex-start; flex-direction: column; } footer { flex-direction: column; } }
+      @media (max-width: 680px) { .page { width: min(100% - 28px, 520px); padding-top: 18px; } .content, .feedback-grid { grid-template-columns: 1fr; } .video-meta { align-items: flex-start; flex-direction: column; } footer { flex-direction: column; } }
     </style>
   </head>
   <body>
@@ -54,6 +70,11 @@
       <p class="eyebrow">A THOUGHTFUL INTRODUCTION · 1 MINUTE</p>
       <h1>A little more peace of mind.</h1>
       <p class="intro">Get to know LegacyCare: a gentle planning prototype that helps people put their wishes into words, keep important notes together, and choose what they want to share.</p>
+      <nav class="video-links" aria-label="Project videos">
+        <a href="#project-introduction" aria-current="location">Project introduction</a>
+        <a href="#experience-feedback">Experience feedback</a>
+      </nav>
+      <section class="video-section" id="project-introduction" aria-label="LegacyCare project introduction">
       <section class="video-card" aria-label="LegacyCare project explanation video">
         <video controls playsinline preload="metadata" poster="legacycare-video-poster.svg">
           <source src="legacycare-explainer.mp4" type="video/mp4" />
@@ -82,6 +103,43 @@
           </div>
         </aside>
       </div>
+      </section>
+      <section class="video-section" id="experience-feedback" aria-labelledby="experience-title">
+        <header class="experience-heading">
+          <p class="eyebrow">BALANCED, PROTOTYPE-BASED REVIEW · 1 MINUTE 42 SECONDS</p>
+          <h2 id="experience-title">LegacyCare experience feedback</h2>
+          <p>A narrated first-impression review: what makes the planning experience approachable, where users may need more clarity, and what should be improved before real personal information is used.</p>
+        </header>
+        <section class="video-card" aria-label="LegacyCare experience feedback video">
+          <video controls playsinline preload="metadata" poster="legacycare-experience-poster.svg">
+            <source src="legacycare-experience-feedback.mp4" type="video/mp4" />
+            Your browser does not support MP4 video.
+            <a href="legacycare-experience-feedback.mp4">Watch the LegacyCare experience feedback video.</a>
+          </video>
+          <div class="video-meta"><span>LegacyCare — experience feedback</span><span>English narration · On-screen captions</span></div>
+        </section>
+        <div class="feedback-grid">
+          <section class="panel">
+            <p class="eyebrow">WHAT FEELS THOUGHTFUL</p>
+            <h2>A gentle, manageable first impression</h2>
+            <ul class="feedback-points">
+              <li><span>♡</span><div><strong>Respectful tone.</strong> The calm visual style and reassuring language suit a sensitive subject.</div></li>
+              <li><span>↗</span><div><strong>Clear starting point.</strong> The dashboard and separate sections make it easier to find wishes, people, and notes.</div></li>
+              <li><span>✳</span><div><strong>Choice without pressure.</strong> People can record preferences, revisit their plan, and download a summary at their own pace.</div></li>
+            </ul>
+          </section>
+          <section class="panel">
+            <p class="eyebrow">WHAT SHOULD COME NEXT</p>
+            <h2>Make trust match the caring design</h2>
+            <ul class="feedback-points">
+              <li><span>01</span><div><strong>Clarify privacy.</strong> Explain prominently what browser storage means and who can see saved data.</div></li>
+              <li><span>02</span><div><strong>Test accessibility.</strong> Validate keyboard navigation, screen-reader support, contrast, and readability with older users.</div></li>
+              <li><span>03</span><div><strong>Earn real-world trust.</strong> Verify providers and build secure, explicit-consent-based family access before real use.</div></li>
+            </ul>
+          </section>
+        </div>
+        <p class="feedback-limits"><strong>Honest context:</strong> This feedback is a walkthrough of the published prototype, not a usability study with recruited participants. The demo has no accounts, encryption, verified providers, or authorized nominee access. Do not enter sensitive information.</p>
+      </section>
       <footer><span>LegacyCare · made for what matters. ♡</span><span>A respectful project demonstration.</span></footer>
     </main>
   </body>
