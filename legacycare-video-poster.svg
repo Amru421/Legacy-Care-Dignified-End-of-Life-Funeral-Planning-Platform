@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f0eee7"/>
+      <stop offset="1" stop-color="#dfe7dc"/>
+    </linearGradient>
+    <linearGradient id="land" x1="0" x2="1">
+      <stop stop-color="#81927b"/>
+      <stop offset="1" stop-color="#526952"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <circle cx="1020" cy="170" r="95" fill="#dfc7a2" opacity=".8"/>
+  <path d="M650 475c125-150 260-176 630-96v341H610z" fill="#91a087"/>
+  <path d="M785 554c128-139 250-124 495-78v244H760z" fill="url(#land)"/>
+  <rect x="890" y="431" width="25" height="110" rx="8" fill="#d1a888"/>
+  <path d="M902 446V346M902 398c-42-10-47-51-27-66 32 4 41 35 27 66Zm0-29c32-1 48-30 38-52-28-1-44 20-38 52Z" fill="#dce4d3"/>
+  <text x="84" y="123" fill="#63735d" font-family="Arial,sans-serif" font-size="21" font-weight="700" letter-spacing="5">LEGACYCARE · A GENTLE INTRODUCTION</text>
+  <text x="82" y="262" fill="#2c342e" font-family="Georgia,serif" font-size="76">A little more</text>
+  <text x="82" y="348" fill="#2c342e" font-family="Georgia,serif" font-size="76">peace of mind.</text>
+  <text x="86" y="412" fill="#687068" font-family="Arial,sans-serif" font-size="25">A thoughtful way to put your wishes into words.</text>
+  <rect x="86" y="483" width="228" height="54" rx="13" fill="#526952"/>
+  <path d="m178 498 25 12-25 13z" fill="#fffefa"/>
+  <text x="218" y="519" fill="#fffefa" font-family="Arial,sans-serif" font-size="19" font-weight="600">Watch the overview</text>
+  <text x="86" y="637" fill="#72776c" font-family="Arial,sans-serif" font-size="18">Your wishes. Your pace. Your choice.</text>
+</svg>

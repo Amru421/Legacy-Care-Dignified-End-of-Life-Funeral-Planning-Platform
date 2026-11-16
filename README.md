@@ -6,7 +6,13 @@ A calm, responsive prototype for planning and sharing end-of-life wishes.
 
 After the GitHub Pages deployment workflow completes, visit:
 
-<https://Amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/>
+<https://amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/>
+
+## Project video
+
+Watch the narrated, captioned introduction:
+
+<https://amru421.github.io/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform/video.html>
 
 ## Run locally
 

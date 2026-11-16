@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <meta
+      name="description"
+      content="Watch a short introduction to LegacyCare: a thoughtful place to document end-of-life wishes and share them at your own pace."
+    />
+    <title>Meet LegacyCare — A short introduction</title>
+    <style>
+      :root { color-scheme: light; --ink: #292f2a; --muted: #898b82; --cream: #f7f5f0; --paper: #fffefa; --green: #526952; --line: #ece9e1; --serif: Georgia, "Times New Roman", serif; --sans: "Segoe UI", Arial, sans-serif; }
+      * { box-sizing: border-box; }
+      body { margin: 0; min-height: 100vh; background: var(--cream); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+      a { color: inherit; }
+      .page { width: min(940px, calc(100% - 36px)); margin: 0 auto; padding: 27px 0 34px; }
+      .brand { display: inline-flex; gap: 10px; align-items: center; text-decoration: none; }
+      .brand-mark { display: grid; place-items: center; width: 36px; height: 36px; border-radius: 12px; color: #536d52; background: #e8eee4; font-size: 19px; }
+      .brand-name { font-family: var(--serif); font-size: 21px; letter-spacing: -.5px; }
+      .brand-name span { color: #77876c; }
+      .crumb { margin: 24px 0 8px; color: #8d8e84; font-size: 11px; }
+      .eyebrow { color: #84887a; font-size: 9px; font-weight: 700; letter-spacing: 1.15px; }
+      h1 { margin: 9px 0 7px; font-family: var(--serif); font-size: clamp(29px, 5vw, 39px); font-weight: 400; letter-spacing: -.65px; }
+      .intro { max-width: 610px; margin: 0 0 20px; color: #81837a; font-size: 13px; line-height: 1.7; }
+      .video-card { overflow: hidden; border: 1px solid #e8e5dc; border-radius: 12px; background: #32473b; box-shadow: 0 13px 36px rgba(49, 56, 45, .09); }
+      video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #34493e; }
+      .video-meta { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 13px 16px; background: var(--paper); color: #777a70; font-size: 10px; }
+      .video-meta span:first-child { color: #63745d; }
+      .content { display: grid; grid-template-columns: 1fr 250px; gap: 14px; align-items: start; margin-top: 16px; }
+      .panel { padding: 18px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); }
+      h2 { margin: 4px 0 11px; font-family: var(--serif); font-size: 18px; font-weight: 400; }
+      .chapters { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; }
+      .chapters li { display: grid; grid-template-columns: 27px 1fr; gap: 9px; align-items: start; color: #6f7269; font-size: 10px; line-height: 1.5; }
+      .chapters li span { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 8px; background: #edf1e9; color: #63745d; font-family: var(--serif); }
+      .chapters strong { display: block; margin-bottom: 1px; color: #464a43; font-size: 10px; }
+      .note { color: #7e8077; font-size: 10px; line-height: 1.65; }
+      .note p:last-child { margin-bottom: 0; }
+      .buttons { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 13px; }
+      .button { display: inline-flex; justify-content: center; align-items: center; min-height: 36px; padding: 9px 13px; border: 1px solid #e7e5dd; border-radius: 7px; background: var(--paper); color: #687160; text-decoration: none; font-size: 10px; font-weight: 600; }
+      .button.primary { border-color: var(--green); background: var(--green); color: white; }
+      .button:hover { filter: brightness(.97); }
+      footer { display: flex; justify-content: space-between; gap: 10px; margin-top: 19px; padding-top: 13px; border-top: 1px solid #eae8e0; color: #96978e; font-size: 9px; }
+      @media (max-width: 680px) { .page { width: min(100% - 28px, 520px); padding-top: 18px; } .content { grid-template-columns: 1fr; } .video-meta { align-items: flex-start; flex-direction: column; } footer { flex-direction: column; } }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <a class="brand" href="./" aria-label="LegacyCare home">
+        <span class="brand-mark" aria-hidden="true">♡</span>
+        <span class="brand-name">legacy<span>care</span></span>
+      </a>
+      <p class="crumb"><a href="./">LegacyCare</a> &nbsp; / &nbsp; Project introduction</p>
+      <p class="eyebrow">A THOUGHTFUL INTRODUCTION · 1 MINUTE</p>
+      <h1>A little more peace of mind.</h1>
+      <p class="intro">Get to know LegacyCare: a gentle planning prototype that helps people put their wishes into words, keep important notes together, and choose what they want to share.</p>
+      <section class="video-card" aria-label="LegacyCare project explanation video">
+        <video controls playsinline preload="metadata" poster="legacycare-video-poster.svg">
+          <source src="legacycare-explainer.mp4" type="video/mp4" />
+          Your browser does not support MP4 video. <a href="legacycare-explainer.mp4">Download the LegacyCare explanation video.</a>
+        </video>
+        <div class="video-meta"><span>LegacyCare — a gentle introduction</span><span>English narration · Captions included</span></div>
+      </section>
+      <div class="content">
+        <section class="panel">
+          <p class="eyebrow">WHAT YOU’LL SEE</p>
+          <h2>One small step at a time</h2>
+          <ol class="chapters">
+            <li><span>01</span><div><strong>Why planning ahead can help</strong>A calmer place to record personal preferences before family members need to make rushed decisions.</div></li>
+            <li><span>02</span><div><strong>Wishes and service options</strong>Record farewell preferences, a meaningful place, a personal note, and explore example service listings.</div></li>
+            <li><span>03</span><div><strong>People, privacy, and limits</strong>Nominee details and browser-saved notes are only a prototype; there are no accounts or authorized family access.</div></li>
+          </ol>
+        </section>
+        <aside class="panel note">
+          <p class="eyebrow">PLEASE NOTE</p>
+          <h2>A demo, not a vault</h2>
+          <p>The prototype saves information in your browser. It is not encrypted, does not upload documents, and should not be used for sensitive personal information.</p>
+          <p>Provider listings are examples, not recommendations. Confirm services and prices independently. This is not a legal document or a substitute for professional advice.</p>
+          <div class="buttons">
+            <a class="button primary" href="./">Explore the demo <span aria-hidden="true">&nbsp; →</span></a>
+            <a class="button" href="https://github.com/Amru421/Legacy-Care-Dignified-End-of-Life-Funeral-Planning-Platform">View project</a>
+          </div>
+        </aside>
+      </div>
+      <footer><span>LegacyCare · made for what matters. ♡</span><span>A respectful project demonstration.</span></footer>
+    </main>
+  </body>
+</html>
