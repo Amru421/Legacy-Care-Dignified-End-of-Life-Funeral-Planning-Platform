@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <meta
+      name="description"
+      content="Plan ahead with care. Keep your wishes, the people you love, and trusted services in one thoughtful place."
+    />
+    <title>LegacyCare — A little more peace of mind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" data-view="dashboard" aria-label="LegacyCare home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none">
+            <path d="M18 29s-11-6.7-11-14.4C7 8.5 15 7.4 18 13c3-5.6 11-4.5 11 1.6C29 22.3 18 29 18 29Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M18 12v13m-5-7h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-name">legacy<span>care</span></span>
+      </a>
+
+      <div class="workspace-label">YOUR SPACE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-link active" data-view="dashboard">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/></svg>
+          Overview
+        </button>
+        <button class="nav-link" data-view="plan">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l5 5v11A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-14A2 2 0 0 1 8 3.5Z"/><path d="M14 4v5h5m-9 4h6m-6 4h6"/></svg>
+          My wishes
+          <span class="nav-badge" id="plan-nav-badge">2</span>
+        </button>
+        <button class="nav-link" data-view="providers">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 20.5h17M5 20.5V9l7-5 7 5v11.5M9 20.5v-7h6v7M9 9.5h.01M15 9.5h.01"/></svg>
+          Find a provider
+        </button>
+        <button class="nav-link" data-view="family">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.25"/><path d="M3.5 20v-1.5a5.5 5.5 0 0 1 11 0V20Zm12-15.5a3.25 3.25 0 0 1 0 6.3m1 3.8a5.4 5.4 0 0 1 4 5.2v.2"/></svg>
+          My people
+        </button>
+        <button class="nav-link" data-view="documents">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l5 5v11A1.5 1.5 0 0 1 17.5 21h-10A1.5 1.5 0 0 1 6 19.5v-14A2 2 0 0 1 8 3.5Z"/><path d="M14 4v5h5m-9 4h6m-6 3.5h6"/></svg>
+          Notes &amp; documents
+        </button>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <div class="gentle-card">
+          <span class="gentle-sparkle" aria-hidden="true">✳</span>
+          <p>There’s no rush.</p>
+          <span>Take this one step at a time.</span>
+        </div>
+        <button class="profile-button" id="profile-button">
+          <span class="avatar" id="sidebar-avatar">M</span>
+          <span class="profile-text"><strong id="sidebar-name">Meera Shah</strong><small>Personal space</small></span>
+          <svg class="profile-chevron" viewBox="0 0 20 20" aria-hidden="true"><path d="m6 8 4 4 4-4"/></svg>
+        </button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Open navigation">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <div class="breadcrumbs"><span>My space</span><span class="crumb-divider">/</span><strong id="page-crumb">Overview</strong></div>
+        <div class="topbar-actions">
+          <span class="saved-status"><span class="saved-dot"></span><span id="save-status">All changes saved</span></span>
+          <button class="icon-button" id="download-plan" aria-label="Download my wishes" title="Download my wishes">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11m0 0 4-4m-4 4-4-4M5 15.5v3A2 2 0 0 0 7 20.5h10a2 2 0 0 0 2-2v-3"/></svg>
+          </button>
+          <button class="top-avatar" id="top-avatar" aria-label="Edit your profile">M</button>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <section class="view active" id="view-dashboard" aria-labelledby="welcome-title">
+          <div class="welcome-row">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-line"></span> A QUIETER KIND OF PREPARATION</p>
+              <h1 id="welcome-title">Good morning, <span id="welcome-name">Meera</span>.</h1>
+              <p class="welcome-copy">A little planning today can bring a lot of peace tomorrow.</p>
+            </div>
+            <div class="date-chip"><span class="date-icon">✳</span><span id="today-date"></span></div>
+          </div>
+
+          <article class="hero-card">
+            <div class="hero-copy">
+              <span class="hero-kicker">YOUR PLAN, YOUR WAY</span>
+              <h2>Let your wishes<br />be known with love.</h2>
+              <p>Gather the things that matter to you, in one thoughtful place. You’re in control, every step of the way.</p>
+              <button class="button button-light" data-go="plan">Continue your wishes <span aria-hidden="true">→</span></button>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+              <div class="hero-sun"></div><div class="hero-hill hill-back"></div><div class="hero-hill hill-front"></div>
+              <div class="hero-plant plant-one"><i></i><i></i><i></i><b></b></div>
+              <div class="hero-plant plant-two"><i></i><i></i><i></i><b></b></div>
+              <div class="hero-plant plant-three"><i></i><i></i><i></i><b></b></div>
+              <span class="art-caption">a life, remembered beautifully</span>
+            </div>
+            <div class="hero-watermark" aria-hidden="true">✳</div>
+          </article>
+
+          <div class="section-heading">
+            <div><p class="eyebrow">YOUR PLAN AT A GLANCE</p><h2>A good beginning</h2></div>
+            <button class="text-button" data-go="plan">View your plan <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="overview-grid">
+            <article class="progress-card">
+              <div class="card-topline"><span>YOUR WISHES</span><span class="small-icon lavender">✳</span></div>
+              <div class="progress-number"><strong id="progress-value">35%</strong><span>thoughtfully planned</span></div>
+              <div class="progress-track"><span id="progress-bar"></span></div>
+              <div class="progress-foot"><span>Every detail you add is one less thing for your loved ones to wonder about.</span><button class="round-arrow" data-go="plan" aria-label="Continue your plan">↗</button></div>
+            </article>
+            <article class="people-card">
+              <div class="card-topline"><span>YOUR PERSON</span><span class="small-icon peach">♡</span></div>
+              <div class="person-detail"><span class="person-avatar" id="nominee-avatar">A</span><div><strong id="nominee-name">Anaya Shah</strong><span id="nominee-relation">Your daughter · Nominee</span></div></div>
+              <p class="muted-note">The person you trust to find your wishes when they need them.</p>
+              <button class="inline-link" data-go="family">Manage your people <span>→</span></button>
+            </article>
+            <article class="next-card">
+              <div class="card-topline"><span>A GENTLE NEXT STEP</span><span class="small-icon sage">↗</span></div>
+              <div class="next-body"><span class="next-number">01</span><div><strong>Choose what feels right</strong><p>Tell us a little about the kind of farewell you imagine.</p></div></div>
+              <button class="inline-link" data-go="plan">Add your preferences <span>→</span></button>
+            </article>
+          </div>
+
+          <div class="bottom-grid">
+            <section class="panel provider-panel">
+              <div class="panel-heading"><div><p class="eyebrow">HERE WHEN YOU NEED US</p><h2>People who can help</h2></div><button class="text-button" data-go="providers">Meet our providers <span>→</span></button></div>
+              <div class="featured-providers" id="featured-providers"></div>
+            </section>
+            <aside class="privacy-card">
+              <div class="privacy-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s8-4 8-10V5l-8-3-8 3v6c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+              <p class="eyebrow">ALWAYS YOURS</p>
+              <h3>Your wishes are<br />personal.</h3>
+              <p>Only you decide what to share, and who to share it with.</p>
+              <button class="inline-link" data-go="family">Your privacy, explained <span>→</span></button>
+            </aside>
+          </div>
+          <p class="disclaimer"><span>✳</span> LegacyCare helps you prepare and share your wishes. It isn’t a substitute for legal, financial, or medical advice.</p>
+        </section>
+
+        <section class="view" id="view-plan" aria-labelledby="plan-title">
+          <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> YOUR WISHES, IN YOUR WORDS</p><h1 id="plan-title">My wishes</h1><p>A personal guide for the people you love. Start wherever feels right; you can change anything, anytime.</p></div>
+          <div class="plan-layout">
+            <div class="panel plan-form-panel">
+              <div class="form-section-title"><span class="step-dot">01</span><div><h2>The kind of farewell</h2><p>There’s no right or wrong way to remember a life.</p></div></div>
+              <form id="plan-form">
+                <label class="field-label" for="planner-name">Your name</label>
+                <input class="text-input" id="planner-name" name="name" autocomplete="name" placeholder="Your full name" />
+                <label class="field-label" for="ritual-type">What feels right to you?</label>
+                <select class="text-input" id="ritual-type" name="ritual">
+                  <option value="">Choose if you’d like</option><option>Hindu</option><option>Muslim</option><option>Christian</option><option>Sikh</option><option>Buddhist</option><option>Jain</option><option>Non-religious</option><option>Another tradition</option>
+                </select>
+                <label class="field-label" for="location">A place that feels like home</label>
+                <input class="text-input" id="location" name="location" placeholder="City, region, or a place you love" />
+                <label class="field-label" for="ceremony">The little things that matter</label>
+                <textarea class="text-input textarea" id="ceremony" name="ceremony" rows="4" placeholder="A song, a prayer, a story you hope someone will share…"></textarea>
+                <label class="field-label" for="budget">A budget to keep in mind <span class="optional">(optional)</span></label>
+                <div class="input-prefix"><span>₹</span><input id="budget" name="budget" type="number" min="0" placeholder="For example, 50,000" /></div>
+                <div class="form-actions"><span class="form-hint">Only you can see your wishes until you choose to share.</span><button class="button button-primary" type="submit">Save my wishes <span>→</span></button></div>
+              </form>
+            </div>
+            <aside class="plan-aside">
+              <article class="aside-note"><span class="aside-flower">✳</span><p class="eyebrow">A THOUGHT TO KEEP</p><p class="quote">“You don’t have to figure it all out today.”</p><span class="quote-foot">One thought at a time is enough.</span></article>
+              <article class="aside-progress panel"><div class="card-topline"><span>YOUR PROGRESS</span><span id="plan-progress">35%</span></div><div class="progress-track"><span id="plan-progress-bar"></span></div><p id="plan-progress-hint">A lovely start. Add a few more details whenever you’re ready.</p><div class="check-list"><span id="check-ritual">○</span> Farewell preferences <span id="check-ritual-state">To do</span></div><div class="check-list"><span id="check-family">○</span> Person you trust <span id="check-family-state">To do</span></div><div class="check-list"><span id="check-provider">○</span> A helping hand <span id="check-provider-state">To do</span></div></article>
+              <div class="soft-reminder"><span>♡</span> These are your wishes, not a binding legal document.</div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-providers" aria-labelledby="providers-title">
+          <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> TRUSTED HELP, WHEN YOU’RE READY</p><h1 id="providers-title">People who can help</h1><p>Explore thoughtful local services at your own pace. Add someone to your wishes when it feels right.</p></div>
+          <div class="directory-tools"><label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4 4"/></svg><input id="provider-search" placeholder="Search by name, service, or place" aria-label="Search providers" /></label><select class="filter-select" id="provider-filter" aria-label="Filter providers"><option value="all">All services</option><option value="ceremony">Ceremony &amp; care</option><option value="transport">Transportation</option><option value="flowers">Flowers &amp; details</option></select></div>
+          <div class="provider-grid" id="provider-grid"></div>
+          <div class="directory-note"><span>♡</span><div><strong>Thoughtful choices take time.</strong><p>Provider details shown here are example listings for this demo. Please verify credentials, availability, and pricing directly before making arrangements.</p></div></div>
+        </section>
+
+        <section class="view" id="view-family" aria-labelledby="family-title">
+          <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> THE PEOPLE WHO MATTER MOST</p><h1 id="family-title">My people</h1><p>Choose someone you trust to be by your side and help carry your wishes forward.</p></div>
+          <div class="family-layout">
+            <article class="panel nominee-panel"><div class="panel-heading"><div><p class="eyebrow">YOUR NOMINEE</p><h2>Your trusted person</h2></div><span class="small-icon peach">♡</span></div><div class="nominee-profile"><span class="nominee-large-avatar" id="family-avatar">A</span><div><h3 id="family-name">Anaya Shah</h3><span id="family-relation">Daughter</span></div></div><div class="family-details"><div><span>EMAIL ADDRESS</span><strong id="family-email">Not added yet</strong></div><div><span>PHONE NUMBER</span><strong id="family-phone">Not added yet</strong></div></div><button class="button button-primary" id="edit-family">Edit contact details <span>→</span></button></article>
+            <article class="panel sharing-panel"><span class="share-illustration">✳</span><p class="eyebrow">SHARING IS ALWAYS YOUR CHOICE</p><h2>Your wishes stay yours.</h2><p>Adding someone here records who you trust. It does not notify them or give them access. You decide what to share, when to share it, and how.</p><div class="sharing-rule"><span>01</span><span>You choose the person</span></div><div class="sharing-rule"><span>02</span><span>You decide when to share</span></div><div class="sharing-rule"><span>03</span><span>You can update your choice anytime</span></div><button class="text-button" data-go="documents">Keep a note for them <span>→</span></button></article>
+          </div>
+          <div class="directory-note privacy-explainer"><span>♡</span><div><strong>A note about access</strong><p>This demonstration does not create accounts, send invitations, or provide authorized family access. In a live service, access should be granted only after identity checks and your explicit consent.</p></div></div>
+        </section>
+
+        <section class="view" id="view-documents" aria-labelledby="documents-title">
+          <div class="page-intro"><p class="eyebrow"><span class="eyebrow-line"></span> KEEP THE IMPORTANT THINGS TOGETHER</p><h1 id="documents-title">Notes &amp; documents</h1><p>Save a note for the people you love, or keep track of the documents you may want to share.</p></div>
+          <div class="documents-layout">
+            <article class="panel notes-panel"><div class="panel-heading"><div><p class="eyebrow">A NOTE IN YOUR OWN WORDS</p><h2>Something you’d like them to know</h2></div><span class="small-icon lavender">✎</span></div><label class="field-label" for="personal-note">Your private note</label><textarea class="text-input note-textarea" id="personal-note" rows="9" placeholder="A memory, a message, or anything you want your loved ones to know…"></textarea><div class="note-footer"><span>Your note stays in this browser in this demo.</span><button class="button button-primary" id="save-note">Save my note <span>→</span></button></div></article>
+            <article class="panel files-panel"><div class="panel-heading"><div><p class="eyebrow">KEEP A LIST</p><h2>Documents to gather</h2></div><span class="small-icon sage">⌑</span></div><p class="files-copy">Add a reminder of documents you may wish to organize, such as a contact list or ceremony notes.</p><label class="upload-button" for="document-upload"><span>＋</span> Add a document name<input type="file" id="document-upload" multiple /></label><ul class="document-list" id="document-list"></ul><div class="security-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s8-4 8-10V5l-8-3-8 3v6c0 6 8 10 8 10Z"/><path d="M12 8v4m0 4h.01"/></svg><span>This demo stores document names only. It does not upload or securely store document files.</span></div></article>
+          </div>
+        </section>
+
+        <footer class="footer"><span>LegacyCare <span class="footer-heart">♡</span> made for what matters.</span><button id="privacy-toast">Privacy &amp; care</button><span class="demo-label">DEMO EXPERIENCE</span></footer>
+      </div>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <div class="modal-backdrop" id="profile-modal" aria-hidden="true">
+      <section class="modal" role="dialog" aria-modal="true" aria-labelledby="profile-modal-title">
+        <button class="modal-close" data-close-modal aria-label="Close dialog">×</button>
+        <p class="eyebrow">A LITTLE ABOUT YOU</p><h2 id="profile-modal-title">Your people</h2><p>Keep a trusted contact close. You can update these details anytime.</p>
+        <form id="family-form">
+          <label class="field-label" for="nominee-input">Their name</label><input class="text-input" id="nominee-input" name="nominee" placeholder="Full name" />
+          <label class="field-label" for="relation-input">How they’re connected to you</label><input class="text-input" id="relation-input" name="relation" placeholder="For example, daughter or close friend" />
+          <label class="field-label" for="email-input">Email address <span class="optional">(optional)</span></label><input class="text-input" id="email-input" name="email" type="email" placeholder="name@example.com" />
+          <label class="field-label" for="phone-input">Phone number <span class="optional">(optional)</span></label><input class="text-input" id="phone-input" name="phone" type="tel" placeholder="+91 98765 43210" />
+          <div class="modal-actions"><button class="button button-secondary" type="button" data-close-modal>Not now</button><button class="button button-primary" type="submit">Save person <span>→</span></button></div>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
